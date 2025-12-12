@@ -1,6 +1,6 @@
 # E-Commerce Recommender System 🚀🛍️
 A cloud-ready, end-to-end data engineering pipeline and recommender-system blueprint for modern e-commerce platforms. The project demonstrates how data ingestion, cleaning, transformation, storage, and ML preparation fit together into a scalable workflow.
-
+![pipeline Screenshot](images/pipeline.png)
 ---
 
 ## 🔍 Project Overview
@@ -126,3 +126,4 @@ This project is licensed under the MIT License.
 
 ## 🙌 Final Note
 This project offers a scalable foundation for any e-commerce platform wanting smarter, data-driven product recommendations. Extend it, stress-test it, or plug in your own ML models — the pipeline is ready.
+
