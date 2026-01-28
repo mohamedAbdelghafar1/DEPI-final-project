@@ -1,0 +1,35 @@
+# Large model artifacts
+model_artifacts/*.pkl
+model_artifacts/*.joblib
+model_artifacts/*.h5
+model_artifacts/*.pth
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data
+dataset/raw-data.csv
+*.csv
+
+# Temporary
+*.tmp
+*.log
