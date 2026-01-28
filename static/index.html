@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Recommender</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="app-header">
+        <div class="container">
+            <div class="logo">
+                <h1>ShopSmart</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="productSearch" placeholder="Search products...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Products Section -->
+        <section id="productsSection">
+            <h2>Featured Products</h2>
+            <div id="productList" class="product-grid"></div>
+            <div class="pagination">
+                <button id="prevBtn" disabled>Previous</button>
+                <span id="pageInfo">Page 1</span>
+                <button id="nextBtn">Next</button>
+            </div>
+        </section>
+
+        <!-- Product Modal/Detail -->
+        <div id="productModal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="product-detail">
+                    <div class="product-image-container">
+                        <img id="detailImage" src="" alt="Product">
+                    </div>
+                    <div class="product-info">
+                        <h2 id="detailName"></h2>
+                        <p class="brand" id="detailBrand"></p>
+                        <div class="rating" id="detailRating"></div>
+                        <p class="description" id="detailDescription"></p>
+                        
+                        <div class="recommendations">
+                            <h3>Similar Products</h3>
+                            <p class="subtitle">Based on product features (Content-Based)</p>
+                            <div id="similarProductsList" class="recommendation-list"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- User Recommendations Section (for demo purposes, simulating a logged-in user) -->
+        <section id="userRecommendations">
+            <div class="section-header">
+                <h2>Recommended For You</h2>
+                <div class="user-selector">
+                    <label>Simulate User ID:</label>
+                    <select id="userSelect">
+                        <option value="4">User 4</option>
+                        <option value="10">User 10</option>
+                        <option value="15">User 15</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="hybrid">Hybrid</button>
+                <button class="tab-btn" data-tab="collaborative">Collaborative</button>
+            </div>
+
+            <div id="recList" class="product-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ShopSmart E-Commerce Recommender System</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
